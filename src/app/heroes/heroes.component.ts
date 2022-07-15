@@ -9,6 +9,7 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent implements OnInit {
+  dysplayed:String[]=['id','name'];
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) {}
