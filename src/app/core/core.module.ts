@@ -14,7 +14,7 @@ const COMPONENT = [
 const MODULE = [
   MaterialModule,
   FlexLayoutModule,
-  AppRoutingModule,
+  RouterModule,
   CommonModule
 ]
 
