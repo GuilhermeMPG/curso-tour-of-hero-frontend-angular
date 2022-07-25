@@ -6,11 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../core/material/material.module';
 import { RouterModule } from '@angular/router';
 import { HeroesRoutingModule } from './heroes-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
 @NgModule({
   declarations: [HeroDetailComponent,HeroesComponent],
-  imports: [CommonModule, FormsModule, MaterialModule, HeroesRoutingModule ]
+  imports: [CommonModule, FormsModule, MaterialModule, HeroesRoutingModule , FlexLayoutModule ]
 })
 export class HeroesModule { }

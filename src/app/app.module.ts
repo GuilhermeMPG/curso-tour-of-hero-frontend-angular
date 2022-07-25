@@ -5,8 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { HeroesModule } from './heroes/heroes.module';
+
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { HeroesModule } from './heroes/heroes.module';
     FormsModule,
     BrowserAnimationsModule,
     //feature
-    DashboardModule,
-    HeroesModule,
+
     //app
     CoreModule,
     AppRoutingModule,

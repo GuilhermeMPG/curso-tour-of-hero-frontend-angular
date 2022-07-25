@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MessagesComponent } from './components/messages/messages.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MaterialModule } from './material/material.module';
+import { PageNotFoundComponent } from './components/page-not-found.component';
 
 const COMPONENT = [
   MessagesComponent,
@@ -21,7 +22,7 @@ const MODULE = [
 
 @NgModule({
 
-  declarations:[COMPONENT],
+  declarations:[COMPONENT, PageNotFoundComponent],
   imports: [ MODULE],
   exports:[MODULE, COMPONENT]
 })
