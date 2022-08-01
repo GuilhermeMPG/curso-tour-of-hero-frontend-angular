@@ -73,7 +73,8 @@
               "browserTarget": "curso-tour-of-heros-frontend-angular:build:production"
             },
             "development": {
-              "browserTarget": "curso-tour-of-heros-frontend-angular:build:development"
+              "browserTarget": "curso-tour-of-heros-frontend-angular:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
