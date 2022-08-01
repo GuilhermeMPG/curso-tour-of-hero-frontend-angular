@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable } from '@angular/core';
-import { Observable, of, tap } from 'rxjs';
+import { finalize, Observable, of, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Hero } from '../models/hero.model';
+import { LoadingService } from './loading.service';
 import { MessageService } from './message.service';
 import { HEROES } from './mock-heroes';
 
@@ -15,14 +16,16 @@ export class HeroService {
 
   constructor(
     private http: HttpClient,
-    private messageService: MessageService
+    private messageService: MessageService,
+    
     ) {}
 
 
   //GET/heroes
   getHero(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl).pipe(
-      tap((heroes)=> this.log(`fetched ${heroes.length} hero(es)`))
+      tap((heroes)=> this.log(`fetched ${heroes.length} hero(es)`)),
+
 
     );
 

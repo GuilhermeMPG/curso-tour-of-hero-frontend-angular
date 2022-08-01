@@ -8,7 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list'
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 const MODULE = [
   MatTooltipModule,
   MatCardModule,
@@ -19,6 +19,7 @@ const MODULE = [
   MatButtonModule,
   MatExpansionModule,
   MatIconModule,
+  MatProgressSpinnerModule,
 ]
 
 @NgModule({
